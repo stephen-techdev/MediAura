@@ -1,0 +1,30 @@
+
+/* ==========================================================================
+   MediAura — long-scroll healthcare page
+   Sections follow the Hospic template order: hero → marquee → about/stats →
+   services → why us → departments → packages → testimonials → doctors →
+   FAQ → blog → CTA → footer.  Everything (fonts + photography) is inlined.
+   ========================================================================== */
+
+/* ---- 1. Fonts ------------------------------------------------------------ */
+@font-face{
+  font-family:'FreeSans';
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+  src:url('../fonts/freesans-400.woff2') format('woff2');
+}
+@font-face{
+  font-family:'FreeSans';
+  font-style:normal;
+  font-weight:700;
+  font-display:block;
+  src:url('../fonts/freesans-700.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Eloquia';
+  font-style:normal;
+  font-weight:200 800;
+  font-display:block;
+  src:url('../fonts/eloquia-200.woff2') format('woff2-variations');
+}

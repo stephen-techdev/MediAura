@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MediAura — Modern healthcare, comfortably simple</title>
+<meta name="description" content="MediAura is a modern healthcare website: same-day appointments, 24/7 emergency care, specialist departments, health packages and experienced doctors.">
+<link rel="icon" href="data:,">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/entrance.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="prog" id="prog" aria-hidden="true"></div>
+<span id="top"></span>
+
+<section class="stage" id="attract" aria-label="MediAura entrance">
+
+  <section class="photo">
+    <video class="photo-img photo-img--tall" autoplay muted loop playsinline preload="auto"
+           poster="img/poster.webp"
+           aria-label="A peregrine falcon in a high-speed dive, feathers rippling against a motion-blurred sky">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260813_052122_e77a27e6-17f1-4794-889b-3ceaa0e9e8cb.mp4" type="video/mp4">
+    </video>
+    <video class="photo-img photo-img--wide" aria-hidden="true" autoplay muted loop playsinline preload="auto"
+           poster="img/poster.webp">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260813_052122_e77a27e6-17f1-4794-889b-3ceaa0e9e8cb.mp4" type="video/mp4">
+    </video>
+
+    <div class="scrim"></div>
+
+    <div class="hero" id="hero">
+      <div class="hl-wrap">
+        <span class="hl" id="hl1">From signal to care,</span>
+        <span class="hl" id="hl2">instantly.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="pane">
+    <div class="card" id="card">
+      <div class="card-in" id="cardIn">
+        <p class="pitch" id="pitch"><b>MediAura</b> — modern healthcare, built for comfort.</p>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<header class="hdr" id="hdr">
+  <div class="container hdr__in">
+    <a class="logo" href="#top" aria-label="MediAura home">
+      <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></i>
+      MediAura
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#departments">Departments</a>
+      <a href="#pricing">Packages</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#faq">FAQ</a>
+      <a href="#blog">Blog</a>
+    </nav>
+    <div class="hdr__cta">
+      <a class="hdr__phone" href="tel:+18005550123">+1 (800) 555-0123</a>
+      <a class="btn btn--sm btn--accent" href="#contact">Book appointment</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer__panel" role="dialog" aria-label="Menu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#departments">Departments</a>
+    <a href="#pricing">Packages</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#faq">FAQ</a>
+    <a href="#blog">Blog</a>
+    <a class="btn btn--accent" href="#contact">Book appointment</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy reveal">
+      <span class="pill">
+        <span class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg>
+        </span>
+        <b>4.9</b> from 500+ patient reviews
+      </span>
+
+      <h1>Modern care,<br><em>comfortably</em> simple.</h1>
+
+      <p class="lede">MediAura brings same-day appointments, specialist departments and 24/7 emergency care into one calm, human experience — healthcare that finally feels designed for you.</p>
+
+      <div class="hero__cta">
+        <a class="btn btn--accent" href="#contact">
+          Book an appointment
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--line" href="#services">Explore services</a>
+      </div>
+
+      <div class="hero__trust">
+        <div class="avatars" aria-hidden="true"><i>DA</i><i>CM</i><i>MS</i><i>SC</i></div>
+        <p><b>2,000+ patients cared for</b>across 24 departments this month</p>
+      </div>
+    </div>
+
+    <div class="hero__media reveal" style="--d:.12s">
+      <div class="hero__frame">
+        <img src="img/photo-01.jpg" alt="A physician checking a patient's care plan on a mobile device" width="1200" height="800">
+      </div>
+      <div class="float-card float-card--a">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></i>
+        <div><b>24/7</b><span>Emergency care, always on</span></div>
+      </div>
+      <div class="float-card float-card--b">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5M17 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM7 14a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></i>
+        <div><b>120+</b><span>Experienced specialists</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MARQUEE ============================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Same-day appointments</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>24/7 emergency team</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free annual health check</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Home sample collection</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Insurance-friendly billing</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>AI-assisted diagnostics</span>
+    </div>
+    <div class="marquee__group">
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Same-day appointments</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>24/7 emergency team</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free annual health check</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Home sample collection</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Insurance-friendly billing</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>AI-assisted diagnostics</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ ABOUT + STATS ============================ -->
+<section class="section" id="about">
+  <div class="container about__grid">
+    <div class="about__media reveal">
+      <img src="img/photo-02.jpg" alt="A doctor listening to a patient during a consultation" width="900" height="587" loading="lazy">
+      <div class="about__badge">
+        <b>18 yrs</b>
+        <span>Caring for our community, one appointment at a time.</span>
+      </div>
+    </div>
+
+    <div class="about__copy reveal" style="--d:.1s">
+      <span class="eyebrow">About us</span>
+      <h2 class="h-xl">Care delivered by people who actually listen.</h2>
+      <p class="lede">We combine skilled clinicians, modern diagnostic facilities and a genuinely warm welcome. From a first check-up to complex treatment, every step is explained clearly — no jargon, no waiting rooms full of guesswork.</p>
+
+      <div class="stats" id="stats">
+        <div class="stat"><b data-count="120" data-suffix="+">0</b><span>Experienced doctors</span></div>
+        <div class="stat"><b data-count="98" data-suffix="%">0</b><span>Patient satisfaction</span></div>
+        <div class="stat"><b data-count="24" data-suffix="">0</b><span>Care departments</span></div>
+        <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>Emergency care</span></div>
+      </div>
+
+      <a class="link-arrow" href="#doctors">
+        <span>Meet our medical team</span>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="section" id="services" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Our services</span>
+        <h2 class="h-xl">Excellence in every medical service</h2>
+        <p class="lede">Four core programmes cover the everyday and the urgent — each one backed by specialists, imaging and lab results on the same visit.</p>
+      </div>
+      <a class="btn btn--line" href="#contact">Book an appointment</a>
+    </div>
+
+    <div class="cards-4">
+      <article class="svc reveal">
+        <span class="svc__no">01</span>
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12z"/></svg></i>
+        <h3>Emergency care</h3>
+        <p>Immediate medical attention 24/7 from an experienced emergency team, with triage in under five minutes.</p>
+      </article>
+      <article class="svc reveal" style="--d:.08s">
+        <span class="svc__no">02</span>
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><path d="M12 15v2a4 4 0 0 0 8 0v-1"/><circle cx="20" cy="14" r="2"/></svg></i>
+        <h3>General medicine</h3>
+        <p>Comprehensive diagnosis, treatment and preventive care for common conditions — same-day results where possible.</p>
+      </article>
+      <article class="svc reveal" style="--d:.16s">
+        <span class="svc__no">03</span>
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.7-7.5-10A4.5 4.5 0 0 1 12 7.4 4.5 4.5 0 0 1 19.5 10.5c0 5.3-7.5 10-7.5 10Z"/></svg></i>
+        <h3>Women's health</h3>
+        <p>Gynaecology, maternity, reproductive and preventive programmes led by a dedicated all-female team.</p>
+      </article>
+      <article class="svc reveal" style="--d:.24s">
+        <span class="svc__no">04</span>
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 12h4l2-4 3 8 2.5-5 1.5 3h5"/></svg></i>
+        <h3>Diagnostic imaging</h3>
+        <p>X-ray, ultrasound, CT and MRI read on-site by radiologists — reports in your patient portal the same day.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================ WHY US ============================ -->
+<section class="section why">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Why choose us</span>
+        <h2 class="h-xl">Built around calm, confident care</h2>
+      </div>
+      <a class="link-arrow" href="#faq">
+        <span>Read the FAQ</span>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="bento">
+      <div class="bento__img reveal">
+        <img src="img/photo-03.jpg" alt="The MediAura medical centre building and entrance" width="900" height="599" loading="lazy">
+        <span class="tag">MediAura Medical Centre — West Wing</span>
+      </div>
+
+      <article class="feat reveal" style="--d:.08s">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg></i>
+        <h3>Experienced specialists</h3>
+        <p>Board-certified doctors with an average of 14 years in practice and a very low turnover of faces you know.</p>
+      </article>
+
+      <article class="feat reveal" style="--d:.16s">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></i>
+        <h3>Advanced technology</h3>
+        <p>Modern diagnostic equipment, digital records and imaging that turns a visit into a same-day answer.</p>
+      </article>
+
+      <article class="feat feat--stat reveal" style="--d:.24s">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5v5c0 5 3.4 8.6 8 9.5 4.6-.9 8-4.5 8-9.5v-5z"/><path d="m9 12 2 2 4-4"/></svg></i>
+        <b>98%</b>
+        <span>of patients say they'd recommend MediAura to family and friends.</span>
+      </article>
+
+      <article class="feat reveal" style="--d:.32s">
+        <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 12H1M3 12l2.5-2.5M12 7v5l3.5 2"/></svg></i>
+        <h3>24/7 emergency care</h3>
+        <p>A staffed emergency unit around the clock, with rapid response ambulances across the region.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DEPARTMENTS ============================ -->
+<section class="section" id="departments">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Departments</span>
+        <h2 class="h-xl">Specialised departments for complete healthcare</h2>
+      </div>
+      <a class="btn btn--line" href="#contact">More departments</a>
+    </div>
+
+    <div class="depts">
+      <a class="dept reveal" href="#contact">
+        <img src="img/photo-04.jpg" alt="Cardiology — a clinician holding a heart-shaped stethoscope" width="760" height="428" loading="lazy">
+        <div class="dept__body">
+          <h3>Cardiology</h3>
+          <p>Expert diagnosis and treatment for heart and cardiovascular conditions.</p>
+          <span class="dept__more">View details
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="dept reveal" href="#contact" style="--d:.08s">
+        <img src="img/photo-05.jpg" alt="Neurology — brain scans reviewed on clinical monitors" width="760" height="507" loading="lazy">
+        <div class="dept__body">
+          <h3>Neurology</h3>
+          <p>Advanced care for the brain, spine and nervous system, from headaches to stroke recovery.</p>
+          <span class="dept__more">View details
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="dept reveal" href="#contact" style="--d:.16s">
+        <img src="img/photo-06.jpg" alt="Radiology — a modern imaging and theatre suite" width="760" height="507" loading="lazy">
+        <div class="dept__body">
+          <h3>Radiology</h3>
+          <p>Digital X-ray, ultrasound, CT and MRI with same-day reporting from our radiologists.</p>
+          <span class="dept__more">View details
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="dept reveal" href="#contact" style="--d:.24s">
+        <img src="img/photo-07.jpg" alt="Orthopedics — a surgical team during a procedure" width="760" height="806" loading="lazy">
+        <div class="dept__body">
+          <h3>Orthopedics</h3>
+          <p>Expert care for bones, joints, muscles and sports injuries, including minimally invasive surgery.</p>
+          <span class="dept__more">View details
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PACKAGES ============================ -->
+<section class="section why" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Health packages</span>
+        <h2 class="h-xl">Affordable health packages for every need</h2>
+        <p class="lede">Transparent, all-in pricing — no surprise extras. Every package includes a written results review with your physician.</p>
+      </div>
+      <a class="btn btn--line" href="#contact">Compare all plans</a>
+    </div>
+
+    <div class="plans">
+      <article class="plan reveal">
+        <h3>Basic health check</h3>
+        <p class="plan__desc">Perfect for routine wellness — the essential screening set, finished in one visit.</p>
+        <div class="plan__price"><b>$49</b><span>/ person</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>General physician consultation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Complete blood count (CBC)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Blood pressure &amp; weight screening</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Digital results in 24 hours</li>
+        </ul>
+        <a class="btn btn--line" href="#contact">Choose plan</a>
+      </article>
+
+      <article class="plan plan--hi reveal" style="--d:.1s">
+        <span class="plan__tag">Most chosen</span>
+        <h3>Standard health check</h3>
+        <p class="plan__desc">A comprehensive package with advanced diagnostics and preventive guidance.</p>
+        <div class="plan__price"><b>$99</b><span>/ person</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Everything in Basic</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Liver &amp; kidney function test</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Chest X-ray</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>30-minute physician review</li>
+        </ul>
+        <a class="btn btn--light" href="#contact">Choose plan</a>
+      </article>
+
+      <article class="plan reveal" style="--d:.2s">
+        <h3>Premium health check</h3>
+        <p class="plan__desc">Our most complete package: full-body evaluation with specialist consultations.</p>
+        <div class="plan__price"><b>$189</b><span>/ person</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Everything in Standard</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Heart health screening (ECG + echo)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Vitamin D &amp; B12 panel</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Two specialist consultations</li>
+        </ul>
+        <a class="btn btn--line" href="#contact">Choose plan</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TESTIMONIALS ============================ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Testimonials</span>
+        <h2 class="h-xl">Trusted healthcare, trusted voices</h2>
+      </div>
+      <span class="pill"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg></span><b>4.9</b> · 500+ reviews</span>
+    </div>
+
+    <div class="quotes">
+      <article class="quote reveal">
+        <span class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg></span>
+        <p>“The nurses were <b>compassionate, attentive and always available</b> whenever I needed assistance. The facilities are modern and the service never felt rushed.”</p>
+        <div class="quote__who">
+          <i style="background:#0e7c66">BF</i>
+          <div><b>Brian Foster</b><span>San Francisco, CA</span></div>
+        </div>
+      </article>
+
+      <article class="quote reveal" style="--d:.08s">
+        <span class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg></span>
+        <p>“I booked at 9am and had bloods, an X-ray and results back before dinner. <b>Everything was explained in plain language</b> — I never felt like a number.”</p>
+        <div class="quote__who">
+          <i style="background:#2c3343">MG</i>
+          <div><b>Melissa Grant</b><span>Austin, TX</span></div>
+        </div>
+      </article>
+
+      <article class="quote reveal" style="--d:.16s">
+        <span class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg></span>
+        <p>“My father was seen within four minutes of arriving at emergency. <b>Quick, calm and genuinely kind</b> — the follow-up call the next day meant a lot.”</p>
+        <div class="quote__who">
+          <i style="background:#b4653a">DR</i>
+          <div><b>Daniel Reyes</b><span>Chicago, IL</span></div>
+        </div>
+      </article>
+
+      <article class="quote reveal" style="--d:.24s">
+        <span class="stars" aria-label="5 out of 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.2 4.8 1.4 7L12 17.9 5.8 21.3l1.4-7L2 9.5l7-.9z"/></svg></span>
+        <p>“From the reception smile to the doctor's follow-up, the whole experience felt <b>designed around patients</b> rather than paperwork.”</p>
+        <div class="quote__who">
+          <i style="background:#3b6ea5">ST</i>
+          <div><b>Sophie Tran</b><span>Seattle, WA</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================ DOCTORS ============================ -->
+<section class="section why" id="doctors">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Our doctors</span>
+        <h2 class="h-xl">Meet our experienced doctors for care</h2>
+      </div>
+      <a class="btn btn--line" href="#contact">Book an appointment</a>
+    </div>
+
+    <div class="docs">
+      <article class="doc reveal">
+        <div class="doc__img">
+          <img src="img/photo-08.jpg" alt="Dr. Amelia Hart, Chief Medical Officer" width="640" height="427" loading="lazy">
+          <span class="doc__hover">Book with Amelia</span>
+        </div>
+        <h3>Dr. Amelia Hart</h3>
+        <span>Chief Medical Officer · Cardiology</span>
+      </article>
+
+      <article class="doc reveal" style="--d:.07s">
+        <div class="doc__img">
+          <img src="img/photo-09.jpg" alt="Dr. Marcus Bell, Pediatric Specialist" width="640" height="800" loading="lazy">
+          <span class="doc__hover">Book with Marcus</span>
+        </div>
+        <h3>Dr. Marcus Bell</h3>
+        <span>Pediatric Specialist</span>
+      </article>
+
+      <article class="doc reveal" style="--d:.14s">
+        <div class="doc__img">
+          <img src="img/photo-10.jpg" alt="Dr. Owen Patel, Cardiologist" width="640" height="427" loading="lazy">
+          <span class="doc__hover">Book with Owen</span>
+        </div>
+        <h3>Dr. Owen Patel</h3>
+        <span>Cardiologist · Interventional care</span>
+      </article>
+
+      <article class="doc reveal" style="--d:.21s">
+        <div class="doc__img">
+          <img src="img/photo-11.jpg" alt="Dr. Elena Ruiz, Neurologist" width="640" height="960" loading="lazy">
+          <span class="doc__hover">Book with Elena</span>
+        </div>
+        <h3>Dr. Elena Ruiz</h3>
+        <span>Neurologist</span>
+      </article>
+
+      <article class="doc reveal" style="--d:.28s">
+        <div class="doc__img">
+          <img src="img/photo-12.jpg" alt="Dr. James Whitfield, Internal Medicine" width="640" height="960" loading="lazy">
+          <span class="doc__hover">Book with James</span>
+        </div>
+        <h3>Dr. James Whitfield</h3>
+        <span>Internal Medicine</span>
+      </article>
+
+      <article class="doc reveal" style="--d:.35s">
+        <div class="doc__img">
+          <img src="img/photo-13.jpg" alt="Dr. Alex Rivera, Orthopedic Surgeon" width="640" height="960" loading="lazy">
+          <span class="doc__hover">Book with Alex</span>
+        </div>
+        <h3>Dr. Alex Rivera</h3>
+        <span>Orthopedic Surgeon</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="section" id="faq">
+  <div class="container faq__grid">
+    <div class="faq__aside reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">FAQ's</span>
+        <h2 class="h-xl">Frequently asked questions</h2>
+        <p class="lede">Everything patients usually ask before a first visit. Still unsure? Our team answers in minutes.</p>
+      </div>
+      <div class="faq__card">
+        <h3>Need help? Get in touch with us</h3>
+        <p>Reception is staffed 24/7 — call, message, or simply walk in.</p>
+        <div class="contacts">
+          <a href="tel:+18005550123">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            +1 (800) 555-0123
+          </a>
+          <a href="mailto:hello@mediaura.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7.5 8.5 6 8.5-6"/></svg>
+            hello@mediaura.com
+          </a>
+        </div>
+        <a class="btn btn--light" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="acc reveal" style="--d:.1s">
+      <details class="qs" open>
+        <summary>Do I need an appointment?</summary>
+        <div class="q-body">You can book an appointment online, call our reception, or visit the hospital in person. Walk-ins are seen the same day, though booking ahead guarantees your preferred clinician and time slot.</div>
+      </details>
+      <details class="qs">
+        <summary>How can I book an appointment?</summary>
+        <div class="q-body">Use the booking form on this page, call +1 (800) 555-0123, or open the MediAura patient app. You'll pick a department, choose a clinician and receive a confirmation with directions and prep instructions.</div>
+      </details>
+      <details class="qs">
+        <summary>Do you accept insurance?</summary>
+        <div class="q-body">Yes — we work with all major national providers and handle the claim for you. Enter your policy in the booking form and we'll confirm coverage before your visit.</div>
+      </details>
+      <details class="qs">
+        <summary>Do you provide emergency care?</summary>
+        <div class="q-body">Our emergency unit is staffed 24/7 with rapid-response ambulances covering the region. Average triage time is under five minutes, and on-site imaging means faster decisions.</div>
+      </details>
+      <details class="qs">
+        <summary>Can I choose my doctor?</summary>
+        <div class="q-body">Absolutely. Every doctor has a public profile with specialisms, languages spoken and available slots — you can request them directly when booking, or ask for the next available specialist.</div>
+      </details>
+      <details class="qs">
+        <summary>Do you offer health checkup packages?</summary>
+        <div class="q-body">Three packages cover routine screening through to full-body evaluation with two specialist consultations. All are fixed-price and include a written results review with your physician.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BLOG ============================ -->
+<section class="section why" id="blog">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <span class="eyebrow">Blog &amp; news</span>
+        <h2 class="h-xl">Latest health insights and wellness tips</h2>
+      </div>
+      <a class="link-arrow" href="#blog">
+        <span>All articles</span>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="posts">
+      <article class="post reveal">
+        <a class="post__img" href="#blog" tabindex="-1" aria-hidden="true">
+          <img src="img/photo-14.jpg" alt="" width="760" height="519" loading="lazy">
+        </a>
+        <div class="post__meta"><span class="chip">Health tips</span><span>Oct 11, 2026 · 6 min</span></div>
+        <h3><a href="#blog">Annual health checkups are one of the most valuable investments</a></h3>
+        <p class="lede" style="font-size:15.5px">What a screening actually catches, how often to book one, and why early answers cost far less than late ones.</p>
+      </article>
+
+      <article class="post reveal" style="--d:.1s">
+        <a class="post__img" href="#blog" tabindex="-1" aria-hidden="true">
+          <img src="img/photo-15.jpg" alt="" width="760" height="502" loading="lazy">
+        </a>
+        <div class="post__meta"><span class="chip">Patient care</span><span>Oct 16, 2026 · 4 min</span></div>
+        <h3><a href="#blog">The recommended health screenings every woman should consider</a></h3>
+        <p class="lede" style="font-size:15.5px">A decade-by-decade guide to the checks that matter, written by our women's health team.</p>
+      </article>
+
+      <article class="post reveal" style="--d:.2s">
+        <a class="post__img" href="#blog" tabindex="-1" aria-hidden="true">
+          <img src="img/photo-16.jpg" alt="" width="760" height="507" loading="lazy">
+        </a>
+        <div class="post__meta"><span class="chip">Wellness</span><span>Oct 22, 2026 · 5 min</span></div>
+        <h3><a href="#blog">Movement as medicine: small habits with outsized results</a></h3>
+        <p class="lede" style="font-size:15.5px">How 20 minutes a day changes blood pressure, sleep and mood — and how to start without a gym.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA ============================ -->
+<section class="section cta" id="contact">
+  <div class="container cta__grid">
+    <div class="cta__copy reveal">
+      <span class="eyebrow eyebrow--light">Book an appointment</span>
+      <h2>Make an appointment today — your first checkup is free.</h2>
+      <p>Pick a time that suits you and we'll confirm within fifteen minutes. No referral needed, no hidden fees, and results always come back to you directly.</p>
+      <div class="cta__row">
+        <a class="btn btn--light" href="tel:+18005550123">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          +1 (800) 555-0123
+        </a>
+        <a class="btn btn--ghost-light" href="mailto:hello@mediaura.com">hello@mediaura.com</a>
+      </div>
+
+      <form class="book" id="bookForm">
+        <span class="book__tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Book online
+        </span>
+        <div class="book__grid">
+          <label class="book__field">Full name
+            <input type="text" name="name" placeholder="Jane Cooper" autocomplete="name" required>
+          </label>
+          <label class="book__field">Phone
+            <input type="tel" name="phone" placeholder="+1 (800) 555-0123" autocomplete="tel" required>
+          </label>
+          <label class="book__field">Department
+            <select name="dept" required>
+              <option value="">Choose a department</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>Radiology</option>
+              <option>Orthopedics</option>
+              <option>General check-up</option>
+            </select>
+          </label>
+          <label class="book__field">Preferred date
+            <input type="date" name="date" required>
+          </label>
+          <label class="book__field">Preferred time
+            <select name="time">
+              <option>09:00</option>
+              <option>10:30</option>
+              <option>12:00</option>
+              <option>14:00</option>
+              <option>15:30</option>
+              <option>17:00</option>
+            </select>
+          </label>
+          <label class="book__field">Reason (optional)
+            <input type="text" name="reason" placeholder="Check-up, follow-up...">
+          </label>
+        </div>
+        <div class="book__actions">
+          <button class="btn btn--accent" type="submit">Confirm booking</button>
+          <span class="book__note">Free first checkup - confirmed by text within 15 minutes.</span>
+        </div>
+        <p class="book__done" id="bookDone" role="status" aria-live="polite"></p>
+        <button class="book__cancel" id="bookCancel" type="button">Cancel appointment</button>
+        <button class="book__again" id="bookAgain" type="button">Book another appointment</button>
+      </form>
+    </div>
+    <div class="cta__media reveal" style="--d:.12s">
+      <img src="img/photo-17.jpg" alt="Reception desk at the MediAura medical centre" width="1400" height="953" loading="lazy">
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a class="logo" href="#top">
+          <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></i>
+          MediAura
+        </a>
+        <p>A modern healthcare website where clinical excellence actually feels like comfort.</p>
+        <div class="socials">
+          <a href="#top" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 3h3l-6.6 7.6L21.7 21h-6l-4.7-6-5.4 6H2.6l7.1-8.1L2.3 3h6.1l4.2 5.6zm-1 16h1.7L7.6 4.7H5.8z"/></svg></a>
+          <a href="#top" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#top" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21h-4z"/></svg></a>
+          <a href="#top" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3-.04-1.3-.13-2.47-.13-2.44 0-4.11 1.49-4.11 4.23V9.9H7.4V13h2.72v8z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#doctors">Our doctors</a></li>
+          <li><a href="#blog">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="#departments">Cardiology</a></li>
+          <li><a href="#departments">Neurology</a></li>
+          <li><a href="#departments">Radiology</a></li>
+          <li><a href="#departments">Orthopedics</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Patients</h4>
+        <ul>
+          <li><a href="#pricing">Health packages</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#blog">Blog &amp; news</a></li>
+          <li><a href="#contact">Book appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="news">
+        <h4>Newsletter</h4>
+        <p>Monthly health guidance from our clinicians. No spam, unsubscribe anytime.</p>
+        <form id="newsForm" novalidate>
+          <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+          <button type="submit">Join</button>
+        </form>
+        <small id="newsNote">By subscribing you agree to our privacy policy.</small>
+      </div>
+    </div>
+
+    <div class="foot__bot">
+      <span>© 2026 MediAura Medical Centre. All rights reserved.</span>
+      <span><a href="#top">Privacy policy</a> · <a href="#top">Terms &amp; conditions</a> · <a href="#top">Back to top ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/entrance-engine.js"></script>
+<script src="js/entrance-play.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
+

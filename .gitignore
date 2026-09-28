@@ -1,0 +1,8 @@
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
+
+# local server scratch
+.cache/
