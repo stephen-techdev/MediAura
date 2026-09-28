@@ -64,7 +64,7 @@
   var fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
   Promise.race([
     fontsReady,
-    new Promise(function(resolve){ setTimeout(resolve, 650); })
+    new Promise(function(resolve){ setTimeout(resolve, 300); })
   ]).catch(function(){
     return null;
   }).then(function(){
