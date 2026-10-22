@@ -11,7 +11,6 @@
   <link rel="preload" href="fonts/freesans-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/eloquia-200.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/entrance.css">
   <link rel="stylesheet" href="css/site.css">
 </head>
 
@@ -19,39 +18,6 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="prog" id="prog" aria-hidden="true"></div>
 <span id="top"></span>
-
-<section class="stage" id="attract" aria-label="MediAura entrance">
-
-  <section class="photo">
-    <video class="photo-img photo-img--tall" autoplay muted loop playsinline preload="auto"
-           poster="img/poster.webp"
-           aria-label="A peregrine falcon in a high-speed dive, feathers rippling against a motion-blurred sky">
-      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260813_052122_e77a27e6-17f1-4794-889b-3ceaa0e9e8cb.mp4" type="video/mp4">
-    </video>
-    <video class="photo-img photo-img--wide" aria-hidden="true" autoplay muted loop playsinline preload="auto"
-           poster="img/poster.webp">
-      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260813_052122_e77a27e6-17f1-4794-889b-3ceaa0e9e8cb.mp4" type="video/mp4">
-    </video>
-
-    <div class="scrim"></div>
-
-    <div class="hero" id="hero">
-      <div class="hl-wrap">
-        <span class="hl" id="hl1">From signal to care,</span>
-        <span class="hl" id="hl2">instantly.</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="pane">
-    <div class="card" id="card">
-      <div class="card-in" id="cardIn">
-        <p class="pitch" id="pitch"><b>MediAura</b> — modern healthcare, built for comfort.</p>
-      </div>
-    </div>
-  </section>
-
-</section>
 
 <header class="hdr" id="hdr">
   <div class="container hdr__in">
@@ -70,7 +36,7 @@
     </nav>
     <div class="hdr__cta">
       <a class="hdr__phone" href="tel:+18005550123">+1 (800) 555-0123</a>
-      <a class="btn btn--sm btn--accent" href="#contact">Book appointment</a>
+      <a class="btn btn--sm btn--accent" href="#" data-book-open>Book appointment</a>
       <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
         <span></span><span></span><span></span>
       </button>
@@ -87,7 +53,7 @@
     <a href="#doctors">Doctors</a>
     <a href="#faq">FAQ</a>
     <a href="#blog">Blog</a>
-    <a class="btn btn--accent" href="#contact">Book appointment</a>
+    <a class="btn btn--accent" href="#" data-book-open>Book appointment</a>
   </div>
 </div>
 
@@ -113,7 +79,7 @@
       <p class="lede">MediAura brings same-day appointments, specialist departments and 24/7 emergency care into one calm, human experience — healthcare that finally feels designed for you.</p>
 
       <div class="hero__cta">
-        <a class="btn btn--accent" href="#contact">
+        <a class="btn btn--accent" href="#" data-book-open>
           Book an appointment
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -204,7 +170,7 @@
         <h2 class="h-xl">Excellence in every medical service</h2>
         <p class="lede">Four core programmes cover the everyday and the urgent — each one backed by specialists, imaging and lab results on the same visit.</p>
       </div>
-      <a class="btn btn--line" href="#contact">Book an appointment</a>
+      <a class="btn btn--line" href="#" data-book-open>Book an appointment</a>
     </div>
 
     <div class="cards-4">
@@ -459,7 +425,7 @@
         <span class="eyebrow">Our doctors</span>
         <h2 class="h-xl">Meet our experienced doctors for care</h2>
       </div>
-      <a class="btn btn--line" href="#contact">Book an appointment</a>
+      <a class="btn btn--line" href="#" data-book-open>Book an appointment</a>
     </div>
 
     <div class="docs">
@@ -620,9 +586,18 @@
   </div>
 </section>
 
-<!-- ============================ CTA ============================ -->
-<section class="section cta" id="contact">
-  <div class="container cta__grid">
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="foot">
+  <div class="foot__bg" aria-hidden="true">
+    <video class="foot__video" autoplay muted loop playsinline preload="metadata" poster="img/poster.webp">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260813_052122_e77a27e6-17f1-4794-889b-3ceaa0e9e8cb.mp4" type="video/mp4">
+    </video>
+    <div class="foot__veil"></div>
+  </div>
+
+  <div class="container foot__cta" id="contact">
     <div class="cta__copy reveal">
       <span class="eyebrow eyebrow--light">Book an appointment</span>
       <h2>Make an appointment today — your first checkup is free.</h2>
@@ -633,65 +608,14 @@
           +1 (800) 555-0123
         </a>
         <a class="btn btn--ghost-light" href="mailto:hello@mediaura.com">hello@mediaura.com</a>
+        <button class="btn btn--accent" type="button" data-book-open>Book online</button>
       </div>
-
-      <form class="book" id="bookForm">
-        <span class="book__tag">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          Book online
-        </span>
-        <div class="book__grid">
-          <label class="book__field">Full name
-            <input type="text" name="name" placeholder="Jane Cooper" autocomplete="name" required>
-          </label>
-          <label class="book__field">Phone
-            <input type="tel" name="phone" placeholder="+1 (800) 555-0123" autocomplete="tel" required>
-          </label>
-          <label class="book__field">Department
-            <select name="dept" required>
-              <option value="">Choose a department</option>
-              <option>Cardiology</option>
-              <option>Neurology</option>
-              <option>Radiology</option>
-              <option>Orthopedics</option>
-              <option>General check-up</option>
-            </select>
-          </label>
-          <label class="book__field">Preferred date
-            <input type="date" name="date" required>
-          </label>
-          <label class="book__field">Preferred time
-            <select name="time">
-              <option>09:00</option>
-              <option>10:30</option>
-              <option>12:00</option>
-              <option>14:00</option>
-              <option>15:30</option>
-              <option>17:00</option>
-            </select>
-          </label>
-          <label class="book__field">Reason (optional)
-            <input type="text" name="reason" placeholder="Check-up, follow-up...">
-          </label>
-        </div>
-        <div class="book__actions">
-          <button class="btn btn--accent" type="submit">Confirm booking</button>
-          <span class="book__note">Free first checkup - confirmed by text within 15 minutes.</span>
-        </div>
-        <p class="book__done" id="bookDone" role="status" aria-live="polite"></p>
-        <button class="book__cancel" id="bookCancel" type="button">Cancel appointment</button>
-        <button class="book__again" id="bookAgain" type="button">Book another appointment</button>
-      </form>
     </div>
     <div class="cta__media reveal" style="--d:.12s">
       <img src="img/photo-17.jpg" alt="Reception desk at the MediAura medical centre" width="1400" height="953" loading="lazy">
     </div>
   </div>
-</section>
-</main>
 
-<!-- ============================ FOOTER ============================ -->
-<footer class="foot">
   <div class="container">
     <div class="foot__top">
       <div class="foot__brand">
@@ -734,7 +658,7 @@
           <li><a href="#pricing">Health packages</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#blog">Blog &amp; news</a></li>
-          <li><a href="#contact">Book appointment</a></li>
+          <li><a href="#" data-book-open>Book appointment</a></li>
         </ul>
       </div>
 
@@ -751,15 +675,83 @@
 
     <div class="foot__bot">
       <span>© 2026 MediAura Medical Centre. All rights reserved.</span>
-      <span><a href="#top">Privacy policy</a> · <a href="#top">Terms &amp; conditions</a> · <a href="#top">Back to top ↑</a></span>
+      <span class="foot__bot-end">
+        <a href="#top">Privacy policy</a> · <a href="#top">Terms &amp; conditions</a>
+        <button class="foot__up" id="footTop" type="button" aria-label="Back to top" title="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </button>
+      </span>
     </div>
   </div>
 </footer>
 
 
-<script src="js/entrance-engine.js"></script>
-<script src="js/entrance-play.js"></script>
+<!-- ============================ BOOKING POPUP ============================ -->
+<div class="bookmodal" id="bookModal" role="dialog" aria-modal="true" aria-labelledby="bookTitle" aria-hidden="true">
+  <div class="bookmodal__backdrop" data-book-close></div>
+  <div class="bookmodal__box">
+    <button class="bookmodal__close" type="button" data-book-close aria-label="Close booking form">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <h2 class="bookmodal__title" id="bookTitle">Book an appointment</h2>
+    <p class="bookmodal__lede">Your first checkup is free — pick a slot and we'll confirm within fifteen minutes.</p>
+
+    <form class="book" id="bookForm">
+      <span class="book__tag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Book online
+      </span>
+      <div class="book__grid">
+        <label class="book__field">Full name
+          <input type="text" name="name" placeholder="Jane Cooper" autocomplete="name" required>
+        </label>
+        <label class="book__field">Phone
+          <input type="tel" name="phone" placeholder="+1 (800) 555-0123" autocomplete="tel" required>
+        </label>
+        <label class="book__field">Department
+          <select name="dept" required>
+            <option value="">Choose a department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Radiology</option>
+            <option>Orthopedics</option>
+            <option>General check-up</option>
+          </select>
+        </label>
+        <label class="book__field">Preferred date
+          <input type="date" name="date" required>
+        </label>
+        <label class="book__field">Preferred time
+          <select name="time">
+            <option>09:00</option>
+            <option>10:30</option>
+            <option>12:00</option>
+            <option>14:00</option>
+            <option>15:30</option>
+            <option>17:00</option>
+          </select>
+        </label>
+        <label class="book__field">Reason (optional)
+          <input type="text" name="reason" placeholder="Check-up, follow-up...">
+        </label>
+      </div>
+      <div class="book__actions">
+        <button class="btn btn--accent" type="submit">Confirm booking</button>
+        <span class="book__note">Free first checkup - confirmed by text within 15 minutes.</span>
+      </div>
+      <p class="book__done" id="bookDone" role="status" aria-live="polite"></p>
+      <button class="book__cancel" id="bookCancel" type="button">Cancel appointment</button>
+      <button class="book__again" id="bookAgain" type="button">Book another appointment</button>
+    </form>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
 <script src="js/site.js"></script>
+
 </body>
 </html>
 

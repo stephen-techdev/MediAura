@@ -210,6 +210,104 @@
         if(first){ first.focus(); }
       });
     }
+
+    /* ---------- booking popup open / close ---------- */
+    var bookModal = doc.getElementById('bookModal');
+
+    function openBook(){
+      if(!bookModal){ return; }
+      bookModal.classList.add('is-open');
+      bookModal.setAttribute('aria-hidden', 'false');
+      doc.body.classList.add('book-open');
+      var first = book.querySelector('input');
+      if(first){ first.focus(); }
+    }
+
+    function closeBook(){
+      if(!bookModal){ return; }
+      bookModal.classList.remove('is-open');
+      bookModal.setAttribute('aria-hidden', 'true');
+      doc.body.classList.remove('book-open');
+      book.classList.remove('is-done');
+      book.classList.remove('is-cancelled');
+      book.reset();
+      if(bookNote){ bookNote.textContent = ''; }
+    }
+
+    [].slice.call(doc.querySelectorAll('[data-book-open]')).forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        openBook();
+      });
+    });
+    [].slice.call(doc.querySelectorAll('[data-book-close]')).forEach(function(btn){
+      btn.addEventListener('click', closeBook);
+    });
+    doc.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && bookModal && bookModal.classList.contains('is-open')){
+        closeBook();
+      }
+    });
+  }
+
+  /* ---------- back to top (footer arrow + floating button) ---------- */
+  var toTop = doc.getElementById('toTop');
+  var footTop = doc.getElementById('footTop');
+  if(toTop || footTop){
+    var reduceMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches);
+    var goTop = function(){
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+      var skip = doc.querySelector('.skip');
+      if(skip){ skip.focus({ preventScroll: true }); }
+    };
+    if(toTop){
+      var footArrowSeen = false;
+      var toggleTop = function(){
+        var y = window.pageYOffset || root.scrollTop || 0;
+        toTop.classList.toggle('is-visible', y > 600 && !footArrowSeen);
+      };
+      window.addEventListener('scroll', toggleTop, {passive:true});
+      /* once the footer's own arrow is on screen, hide the floating one */
+      if(footTop && 'IntersectionObserver' in window){
+        new IntersectionObserver(function(entries){
+          footArrowSeen = entries[0].isIntersecting;
+          toggleTop();
+        }, { threshold: 0.4 }).observe(footTop);
+      }
+      toggleTop();
+    }
+    [toTop, footTop].filter(Boolean).forEach(function(btn){
+      btn.addEventListener('click', goTop);
+    });
+  }
+
+  /* ---------- footer backdrop video: play only while visible ---------- */
+  var footVid = doc.querySelector('.foot__video');
+  if(footVid){
+    var saveData = !!(navigator.connection && navigator.connection.saveData);
+    var reducedMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches);
+    var skipFootVideo = saveData || reducedMotion;
+
+    if(skipFootVideo){
+      /* keep the poster frame — no decode cost, no autoplay */
+      footVid.autoplay = false;
+      footVid.removeAttribute('autoplay');
+      footVid.pause();
+    }
+
+    if(!skipFootVideo && 'IntersectionObserver' in window){
+      var footIO = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){
+            var p = footVid.play();
+            if(p && p.catch){ p.catch(function(){}); }
+          } else if(!footVid.paused){
+            footVid.pause();
+          }
+        });
+      }, { threshold: 0.05 });
+      footIO.observe(footVid.closest('.foot') || footVid);
+    }
   }
 
   /* ---------- in-page links close the menu and respect reduced motion ---------- */
